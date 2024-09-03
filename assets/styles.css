@@ -115,13 +115,6 @@ nav {
     .hero-btn:hover{
         justify-content: center;
     }
-    .chi-sono {
-     top: 10%;
-     padding-left: center; 
-     padding-bottom: 20px;
-     text-align: center;
-     
-    }
 }
 
 .p {
@@ -135,10 +128,6 @@ nav {
  padding-bottom: 20px;
  text-align: center;
  
- 
- min-height: 100vh;
- width: 100%;
- background-position: center;
 }
 
 h2 {
