@@ -462,11 +462,10 @@ p {
 
 
 .content-contattami {
-    padding: 5%;
+    padding: 10%;
     color: #292929;
     width: 100%;
     box-sizing: border-box;
-    float:left;
 }
 
 #modulo {
@@ -506,7 +505,8 @@ p {
     }
     
     ul li.quattro{
-        padding: 20px 0; text-align: center;
+        padding: 20px; text-align: center;
+        width: 100%;
     }
     
     ul li label {
@@ -540,7 +540,7 @@ p {
     
     ul li .button {
         color: white;
-        background-color: #A81A34;
+        background-color: $primary-color;
         border-radius: 32px;
         border: transparent;
         font-size: 16px;
