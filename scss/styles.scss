@@ -1,4 +1,7 @@
+$primary-color: rgb(206, 32, 65);
 $secondary-color: rgb(249, 198, 197);
+$about-me-section-width: 1000px;
+
 * {
     margin: 0;
     padding: 0;
@@ -141,7 +144,9 @@ li {
     }
 }
 
-
+.content{
+    padding: 10% 5%;
+}
 
 
 
@@ -151,8 +156,6 @@ li {
 /*------------------------- HERO SECTION - LEFT ---------------------------*/
 
 .hero-section {
-    padding-top: 10%;
-    padding-left: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +177,7 @@ li {
 }
 
 .button-hero {
-    background-color: rgb(206, 32, 65);
+    background-color: $primary-color;
     padding: 12px 24px;
     border-top: 20px;
     text-decoration: none;
@@ -211,34 +214,51 @@ li {
 
 .about-me-section {
     text-align: center;
+    margin: auto;
     margin-bottom: 100px;
-    padding: 0 50px;
+    line-height: 2;
+    max-width: $about-me-section-width;
+    padding: 15% 0;
+
+    h2 {
+        font-weight: 600;
+        font-size: 33px;
+        padding: 2rem 0;
+    }
+
+    p {
+        // padding: 1rem 0;
+        margin-bottom: 0;
+    }
 }
 
-.about-me-section h2 {
-    font-weight: 600;
-    font-size: 33px;
-    padding-bottom: 60 0 20;
-}
+// @media (max-width: $about-me-section-width) {
+//     .about-me-section {
+//         // width: 50%;
+//         color: red;
+//     }
+// }
 
+.about-me-section 
 
 .button-cv {
     display: inline-block;
- margin-top: 20px;
+//  margin-top: 20px;
  padding: 12px 32px;
  border-radius: 32px;
  text-decoration: none;
  border: none;
  background-color: transparent;
- color: #A81A34;
- font-weight: 600;
+ color: $primary-color;
+ font-weight: 700;
+ font-size: 1.2rem;
 }
 
 .button-cv::after {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: #A81A34;
+    background-color: $primary-color;
     display: block;
     margin: auto;
     transition: 0.3s;
@@ -443,20 +463,9 @@ p {
 
 
 
-/*----------------------------------      MEDIA QUERY       -------------------------------------*/
+/*----------------------------------      FOOTER       -------------------------------------*/
 
-@media (max-width: 1000px) {
-    .container {
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
 
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-
-    }
+footer{
+    text-align: center;
 }
