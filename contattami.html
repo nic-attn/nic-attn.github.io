@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'/>
+    <title>Contattami</title>
+    <link href='new/assets/styles.css' rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+      <a href="#" class="logo">Nicoletta.</a>
+      <input class="menu-btn" id="menu-btn" type="checkbox">
+      <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+          <li><a href="#">Chi sono</a></li>
+          <li><a href="#">Il mio portfolio</a></li>
+          <li><a href="contattami.html">Contattami</a></li>
+      </ul>
+  </header>
+ 
+  <section id="modulo">
+    <div class="content-contattami">
+      <h2>Desideri conoscermi meglio?</h2>
+      <p>Se sei interessato/a o vuoi avere qualche informazione in più, compila il seguente form per contattarmi</p>
+      <form action="#" method="post">
+        <ul>
+          <li class="uno">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="testo" required>
+          </li>
+
+          <li class="due">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="testo" required>
+          </li>
+
+          <li class="tre">
+            <label for="testo">Messaggio</label>
+            <textarea name="testo" id="testo"></textarea>
+          </li>
+
+          <li class="quattro">
+            <input type="submit" value="Invia il messaggio" class="button">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+</body>
