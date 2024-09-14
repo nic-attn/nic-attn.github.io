@@ -1,3 +1,409 @@
-body {
-  background: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.header {
+  background-color: rgb(249, 198, 197);
+  box-shadow: 0 0 5px 0 rgba(14, 13, 13, 0.337254902);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+li a {
+  color: #292929;
+  text-decoration: none;
+  font-weight: 500px;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #ffdddd;
+  color: #640202;
+  text-decoration: none;
+  font-weight: 600px;
+}
+
+.header .logo {
+  float: left;
+  font-size: 25px;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  padding: 15px 24px;
+  color: #292929;
+  text-decoration: none;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background-color: grey;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: backgroud-color 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+  background-color: grey;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+}
+
+.header .menu-icon .nav-icon::before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: 0;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+@media (min-width: 49em) {
+  .header .menu {
+    max-height: 240px;
+  }
+}
+/*------------------------- HERO SECTION - LEFT ---------------------------*/
+.hero-section {
+  padding-top: 10%;
+  padding-left: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.hero-section h3 {
+  color: #CE2041;
+  font-weight: 700;
+}
+
+.hero-section .p-hp {
+  font-size: 18px;
+  padding: 12px 0;
+}
+
+.button-hero {
+  background-color: rgb(206, 32, 65);
+  padding: 12px 24px;
+  border-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 32px;
+}
+
+.button-hero:hover {
+  background-color: #FE4950;
+  transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section .hero-right img {
+    width: 300px;
+  }
+}
+/*------------------------------------ HERO SECTION: RIGHT --------------------------------------------*/
+.hero-section .hero-right img {
+  width: 500px;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+/*------------------------------------- SECTION: CHI SONO -----------------------------------------------*/
+.about-me-section {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0 50px;
+}
+
+.about-me-section h2 {
+  font-weight: 600;
+  font-size: 33px;
+  padding-bottom: 60 0 20;
+}
+
+.button-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  border-radius: 32px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: #A81A34;
+  font-weight: 600;
+}
+
+.button-cv::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #A81A34;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.button-cv:hover::after {
+  width: 100%;
+}
+
+/*------------ LEFT SECTION OF CV ---------------*/
+.background-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(249, 198, 197, 0.6588235294); /*fdc8c844*/
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 50px;
+}
+
+.container .left-side {
+  position: relative;
+  background: #CE2041;
+  padding: 40px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9dfdf;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #ffe8e8; /*fdc8c844*/
+}
+
+.contactInfo ul li span {
+  color: white;
+  font-weight: 400;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileText h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.contactInfo ul li p {
+  color: white;
+  text-align: center;
+}
+
+.contactInfo p {
+  color: white;
+  text-align: center;
+}
+
+.container .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+/*---------RIGHT SIDE-----------------*/
+.right-side h2 {
+  color: #CE2041;
+  font-weight: 700;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+
+.right-side ul li {
+  list-style: none;
+  color: #292929;
+  padding-bottom: 4%;
+}
+
+.right-side h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.right-side h5 {
+  font-weight: 300;
+  color: #292929;
+}
+
+.right-side .HardSkills ul li {
+  list-style: disc;
+  font-size: 18px;
+  height: 600;
+  padding-bottom: 1%;
+  width: 90%;
+}
+
+.right-side .EsperienzaLavorativa ul li {
+  list-style: disc;
+  font-size: 18px;
+  height: 600;
+  padding-bottom: 1%;
+  width: 90%;
+}
+
+p {
+  font-size: 18px;
+}
+
+.right-side .autorizzazione p {
+  font-weight: 200;
+  color: #4d4c4c;
+  padding-top: 4%;
+}
+
+/*----------------------------------      MEDIA QUERY       -------------------------------------*/
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=styles.css.map */
