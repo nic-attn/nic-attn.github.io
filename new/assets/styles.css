@@ -224,6 +224,25 @@ li a:hover {
   width: 100%;
 }
 
+/* --------------------------------------------- SECTION: LE MIE COMPETENZE ----------------------------------------- */
+.le-mie-competenze {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  line-height: 2;
+  padding: 15% 0;
+}
+.le-mie-competenze h2 {
+  font-weight: 600;
+  font-size: 37px;
+  padding: 2rem 0;
+}
+.le-mie-competenze .card img {
+  width: 30px;
+  padding: 2rem 0 1rem;
+  margin: auto;
+}
+
 /*------------ LEFT SECTION OF CV ---------------*/
 .background-cv {
   display: flex;
@@ -233,7 +252,7 @@ li a:hover {
   background-color: rgba(249, 198, 197, 0.6588235294); /*fdc8c844*/
 }
 
-.container {
+.container-cv {
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -243,7 +262,7 @@ li a:hover {
   padding: 50px;
 }
 
-.container .left-side {
+.container-cv .left-side {
   position: relative;
   background: #CE2041;
   padding: 40px;
@@ -337,7 +356,7 @@ li a:hover {
   text-align: center;
 }
 
-.container .right-side {
+.container-cv .right-side {
   position: relative;
   background: #fff;
   padding: 40px;
@@ -402,7 +421,7 @@ p {
 
 #modulo h2 {
   padding: 8px;
-  font-size: 40px;
+  font-size: 37px;
 }
 #modulo p {
   padding-top: 4px;

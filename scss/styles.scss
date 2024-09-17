@@ -1,6 +1,11 @@
 $primary-color: rgb(206, 32, 65);
 $secondary-color: rgb(249, 198, 197);
 $about-me-section-width: 1000px;
+$h1-fontsize: 45px;
+$h2-fontsize: 37px;
+$p-fontsize: 18px;
+
+
 
 * {
     margin: 0;
@@ -274,6 +279,38 @@ li {
 
 
 
+/* --------------------------------------------- SECTION: LE MIE COMPETENZE ----------------------------------------- */
+
+.le-mie-competenze {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    line-height: 2;
+    // max-width: $about-me-section-width;
+    padding: 15% 0;
+    // display: flex;
+
+    h2 {
+        font-weight: 600;
+        font-size: $h2-fontsize;
+        padding: 2rem 0;
+    }
+
+    .card img {
+        width: 30px;
+        padding: 2rem 0 1rem;
+        margin: auto;
+    }
+
+    
+
+
+}
+
+
+
+
+
 
 
 
@@ -290,7 +327,7 @@ li {
     background-color: #f9c6c5a8; /*fdc8c844*/  
   }
     
-.container {
+.container-cv {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -300,7 +337,7 @@ li {
     padding: 50px;
 }
 
-.container .left-side {
+.container-cv .left-side {
     position: relative;
     background: #CE2041;
     padding: 40px;
@@ -397,7 +434,7 @@ li {
 }
 
 
-.container .right-side {
+.container-cv .right-side {
     position: relative;
     background: #fff;
     padding: 40px;
@@ -471,7 +508,7 @@ p {
 #modulo {
     h2 {
         padding: 8px;
-        font-size: 40px;
+        font-size: 37px;
     }
 
     p {
