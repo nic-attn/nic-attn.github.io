@@ -187,18 +187,18 @@ li a:hover {
   margin-bottom: 100px;
   line-height: 2;
   max-width: 1000px;
-  padding: 15% 0;
+  padding: 15% 0 8%;
 }
 .about-me-section h2 {
   font-weight: 600;
   font-size: 33px;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .about-me-section p {
   margin-bottom: 0;
 }
 
-.about-me-section .button-cv {
+.button-cv {
   display: inline-block;
   padding: 12px 32px;
   border-radius: 32px;
@@ -230,17 +230,40 @@ li a:hover {
   margin: auto;
   margin-bottom: 100px;
   line-height: 2;
-  padding: 15% 0;
+  padding-bottom: 8%;
 }
 .le-mie-competenze h2 {
   font-weight: 600;
   font-size: 37px;
-  padding: 2rem 0;
+  padding: 1rem 0;
+}
+.le-mie-competenze p {
+  padding-bottom: 16px;
 }
 .le-mie-competenze .card img {
   width: 30px;
   padding: 2rem 0 1rem;
   margin: auto;
+}
+
+.portfolio {
+  text-align: center;
+  padding-bottom: 8%;
+}
+.portfolio h2 {
+  font-size: 37px;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.portfolio p {
+  padding-bottom: 16px;
+}
+.portfolio .cards-wrapper {
+  display: flex;
+}
+.portfolio .card {
+  margin: 0 0.5em;
+  width: 33.3333333333%;
 }
 
 /*------------ LEFT SECTION OF CV ---------------*/

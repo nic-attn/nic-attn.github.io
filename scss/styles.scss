@@ -223,12 +223,12 @@ li {
     margin-bottom: 100px;
     line-height: 2;
     max-width: $about-me-section-width;
-    padding: 15% 0;
+    padding: 15% 0 8%;
 
     h2 {
         font-weight: 600;
         font-size: 33px;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     p {
@@ -244,7 +244,6 @@ li {
 //     }
 // }
 
-.about-me-section 
 
 .button-cv {
     display: inline-block;
@@ -286,14 +285,18 @@ li {
     margin: auto;
     margin-bottom: 100px;
     line-height: 2;
+    padding-bottom: 8%;
     // max-width: $about-me-section-width;
-    padding: 15% 0;
     // display: flex;
 
     h2 {
         font-weight: 600;
         font-size: $h2-fontsize;
-        padding: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    p {
+        padding-bottom: 16px;
     }
 
     .card img {
@@ -302,19 +305,33 @@ li {
         margin: auto;
     }
 
-    
-
-
 }
 
 
+.portfolio {
+    text-align: center;
+    padding-bottom: 8%;
+    h2 {
+        font-size: $h2-fontsize;
+        font-weight: 600;
+        padding: 1rem 0;
+    }
 
+    p {
+        padding-bottom: 16px;
+    }
 
+    .cards-wrapper {
+        display: flex;
+    }
 
+    .card {
+        margin: 0 .5em;
+        width: calc(100%/3);
 
+    }
 
-
-
+}
 
 
 /*------------ LEFT SECTION OF CV ---------------*/
