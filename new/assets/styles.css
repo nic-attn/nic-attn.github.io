@@ -59,7 +59,7 @@ li a {
 }
 li a:hover {
   background-color: #ffdddd;
-  color: #640202;
+  color: #FE4950;
   text-decoration: none;
 }
 
@@ -126,7 +126,7 @@ li a:hover {
   }
 }
 .content {
-  padding: 10% 5%;
+  padding: 10% 5% 4%;
 }
 
 /*------------------------- HERO SECTION - LEFT ---------------------------*/
@@ -135,24 +135,21 @@ li a:hover {
   justify-content: space-between;
   align-items: center;
 }
-
 .hero-section h1 {
   font-size: 45px;
   font-weight: 600;
 }
-
 .hero-section h3 {
-  color: #CE2041;
+  color: rgb(206, 7, 65);
   font-weight: 700;
 }
-
 .hero-section .p-hp {
   font-size: 18px;
   padding: 12px 0;
 }
 
 .button-hero {
-  background-color: rgb(206, 32, 65);
+  background-color: rgb(206, 7, 65);
   padding: 12px 24px;
   border-top: 20px;
   text-decoration: none;
@@ -187,7 +184,7 @@ li a:hover {
   margin-bottom: 100px;
   line-height: 2;
   max-width: 1000px;
-  padding: 15% 0 8%;
+  padding: 12% 0 2%;
 }
 .about-me-section h2 {
   font-weight: 600;
@@ -205,7 +202,7 @@ li a:hover {
   text-decoration: none;
   border: none;
   background-color: transparent;
-  color: rgb(206, 32, 65);
+  color: rgb(206, 7, 65);
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -214,7 +211,7 @@ li a:hover {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: rgb(206, 32, 65);
+  background-color: rgb(206, 7, 65);
   display: block;
   margin: auto;
   transition: 0.3s;
@@ -230,7 +227,7 @@ li a:hover {
   margin: auto;
   margin-bottom: 100px;
   line-height: 2;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
 }
 .le-mie-competenze h2 {
   font-weight: 600;
@@ -258,12 +255,60 @@ li a:hover {
 .portfolio p {
   padding-bottom: 16px;
 }
-.portfolio .cards-wrapper {
-  display: flex;
+@media screen and (min-width: 680px) {
+  .portfolio .cards-wrapper {
+    display: flex;
+  }
+  .portfolio .card {
+    margin: 0 0.5em;
+    width: 33.3333333333%;
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  }
 }
-.portfolio .card {
-  margin: 0 0.5em;
-  width: 33.3333333333%;
+.portfolio .carousel-inner {
+  padding: 1em;
+}
+.portfolio .carousel-control-prev {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio .carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio .btn-primary {
+  border: none;
+  background-color: transparent !important;
+  color: rgb(206, 7, 65) !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+}
+.portfolio .btn-primary::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(206, 7, 65);
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.portfolio .btn-primary:hover::after {
+  width: 100%;
+}
+@media screen and (max-width: 679px) {
+  .portfolio .card:not(:first-child) {
+    display: none;
+  }
 }
 
 /*------------ LEFT SECTION OF CV ---------------*/
@@ -275,7 +320,7 @@ li a:hover {
   background-color: rgba(249, 198, 197, 0.6588235294); /*fdc8c844*/
 }
 
-.container-cv {
+.box-cv {
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -284,10 +329,9 @@ li a:hover {
   grid-template-columns: 1fr 2fr;
   padding: 50px;
 }
-
-.container-cv .left-side {
+.box-cv .left-side {
   position: relative;
-  background: #CE2041;
+  background: rgb(206, 7, 65);
   padding: 40px;
 }
 
@@ -303,28 +347,32 @@ li a:hover {
 .contactInfo {
   padding-top: 40px;
 }
-
 .contactInfo ul {
   position: relative;
 }
-
 .contactInfo ul li {
   position: relative;
   list-style: none;
   margin: 10px 0;
   cursor: pointer;
 }
-
+.contactInfo ul li a {
+  color: white;
+  display: inline-block;
+}
 .contactInfo ul li .icon {
   display: inline-block;
   width: 30px;
   font-size: 18px;
   color: #ffe8e8; /*fdc8c844*/
 }
-
 .contactInfo ul li span {
   color: white;
   font-weight: 400;
+}
+.contactInfo ul li p {
+  color: white;
+  text-align: center;
 }
 
 .title {
@@ -344,7 +392,6 @@ li a:hover {
   border-radius: 50%;
   overflow: hidden;
 }
-
 .profileText .imgBx img {
   position: absolute;
   top: 0;
@@ -363,28 +410,26 @@ li a:hover {
   text-align: center;
   font-weight: 600;
 }
-
 .profileText h2 span {
   font-size: 0.8em;
   font-weight: 400;
 }
 
-.contactInfo ul li p {
-  color: white;
-  text-align: center;
-}
-
-.contactInfo p {
-  color: white;
-  text-align: center;
-}
-
-.container-cv .right-side {
+.box-cv .right-side {
   position: relative;
   background: #fff;
   padding: 40px;
 }
 
+@media (max-width: 1000px) {
+  .box-cv {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  p {
+    font-size: 12px;
+  }
+}
 /*---------RIGHT SIDE-----------------*/
 .right-side h2 {
   color: #CE2041;
@@ -502,7 +547,7 @@ p {
 }
 #modulo ul li .button {
   color: white;
-  background-color: rgb(206, 32, 65);
+  background-color: rgb(206, 7, 65);
   border-radius: 32px;
   border: transparent;
   font-size: 16px;
@@ -522,4 +567,26 @@ p {
 /*----------------------------------      FOOTER       -------------------------------------*/
 footer {
   text-align: center;
+  background-color: rgb(249, 198, 197);
+}
+footer .boxFooter {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+footer .footer-text {
+  padding: 1%;
+  text-align: center;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+footer .social-icons a {
+  padding: 0 10px;
+  text-decoration: none;
+  border-radius: 10%;
+}
+footer .social-icons a i {
+  font-size: 1.5em;
+  color: #292929;
 }/*# sourceMappingURL=styles.css.map */

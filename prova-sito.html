@@ -12,7 +12,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
@@ -24,7 +25,7 @@
             </label>
             <ul class="menu">
                 <li><a href="cv.html" target="_blank">Il mio CV</a></li>
-                <li><a href="#portfolio">Il mio portfolio</a></li>
+                <li><a href="#section-portfolio">Il mio portfolio</a></li>
                 <li><a href="contattami.html">Contattami</a></li>
             </ul>
         </header>
@@ -34,8 +35,9 @@
                 <div class="hero-left">
                     <h1>Ciao! Sono Nicoletta Attanzio</h1>
                     <h3>Junior UX/UI Designer</h3>
-                    <p class="p-hp">Progetto siti web facili e piacevoli da usare</p>
-                    <a class="button-hero" href='https://www.freecodecamp.org/'>Conoscimi meglio</a>
+                    <p class="p-hp">Il mio obiettivo principale è creare interfacce chiare, confortevoli e user friendly.</p>
+                    <!-- Progetto siti web facili e piacevoli da usare -->
+                    <a class="button-hero" href="#about-me">Conoscimi meglio</a>
                 </div>
     
                 <div class="hero-right">
@@ -51,7 +53,7 @@
                     
                 Sono una ragazza molto sensibile ed empatica e credo che questa sia la chiave per essere un buon UX Designer.
                 </p>
-                <a class="button-cv" href='cv.html'>Guarda il mio CV</a>
+                <a class="button-cv" href='cv.html' target="_blank">Guarda il mio CV</a>
     
             </div>
 
@@ -98,36 +100,39 @@
                 </div>
             </div>   
 
-            <div class="portfolio">
+            <div class="portfolio" id="section-portfolio">
                 <h2>Il mio portfolio</h2>
                 <p>I miei progetti sono stati corretti e approvati dai coach esperti di Start2Impact</p>
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="cards-wrapper">
                                 <div class="card">
-                                    <img src="Immagine 2024-09-17 171636.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="Immagine 2024-09-17 171636.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Graphic Design</h5>
-                                        <p><small>Planty of food / Brand identity</small></p>
                                         <p class="card-text">Ho progettato e realizzato la <strong>brand identity</strong> di un e-commerce di prodotti vegetali.</p>
                                         <a href="#" class="btn btn-primary">Scopri il progetto</a>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="hotelpomelia.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="hotelpomelia.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Copywriting</h5>
-                                        <p><small>Hotel Pomelia / Articolo di blog</small></p>
-                                        <p class="card-text">Ho strutturato e <strong>scritto un articolo in ottica SEO per il blog di una struttura ricettiva siciliana.</strong></p>
+                                        <p class="card-text">Ho strutturato e <strong>scritto un articolo in ottica SEO</strong> per il blog di una struttura ricettiva siciliana.</p>
                                         <a href="#" class="btn btn-primary">Scopri il progetto</a>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="discovery.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="Copertina User Research & Accessibility.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">User Research (Discovery) & Accessibility</h5>
-                                        <p><small>iVegan / User Research</small></p>
+                                        <h5 class="card-title">User Research & Accessibility</h5>
                                         <p class="card-text">Ho riprogettato l'e-commerce Vegan più fornito d'Italia, <strong>partendo dalla User Research</strong></p>
                                         <a href="#" class="btn btn-primary">Scopri il progetto</a>
                                     </div>
@@ -137,27 +142,33 @@
                         <div class="carousel-item">
                             <div class="cards-wrapper">
                                 <div class="card">
-                                    <img src="discovery.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="Copertina Wireframing.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Wireframing & UI</h5>
+                                        <p class="card-text">Ho progettato dei nuovi <strong>wireframes</strong> e stravolto <strong>la UI</strong> del nuovo sito, rendodola anche accessibile.</p>
+                                        <a href="#" class="btn btn-primary">Scopri il progetto</a>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="Immagine 2024-09-17 171636.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="Copertina User Test.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">User testing</h5>
+                                        <p class="card-text">Ho testato il sito con 5 utenti, attraverso un <strong>test di usabilità moderato da remoto</strong>, ottenendo risultati qualitativi.</p>
+                                        <a href="#" class="btn btn-primary">Scopri il progetto</a>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="hotelpomelia.png" class="card-img-top" alt="...">
+                                    <div class="image-wrapper">
+                                        <img src="Copertina coming soon.png" class="card-img-top" alt="...">
+                                    </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Progetto finale</h5>
+                                        <p class="card-text">Il prossimo progetto sta per arrivare...</p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -173,13 +184,20 @@
                     </button>
                 </div>    
             </div>
-
-
-            
         </div>
 
         <footer>
-            Fatto con 💗 da Nicoletta🌸
+            <div class="boxFooter">
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="footer-text">
+                    <p>MADE WITH 💗 BY NICOLETTA ATTANZIO🌸</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
