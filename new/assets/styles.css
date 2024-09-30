@@ -51,13 +51,13 @@
   transition: backgroud-color 0.2s ease-out;
 }
 
-li a {
+ul.menu li a {
   color: #292929;
   text-decoration: none;
   font-weight: 500px;
   font-size: 18px;
 }
-li a:hover {
+ul.menu li a:hover {
   background-color: #ffdddd;
   color: #FE4950;
   text-decoration: none;
@@ -164,10 +164,40 @@ li a:hover {
 
 @media (max-width: 800px) {
   .hero-section {
-    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 8%;
   }
-  .hero-section .hero-right img {
-    width: 300px;
+  .hero-section h1 {
+    font-size: 37px;
+  }
+  .hero-section p {
+    font-size: 16px;
+  }
+  .hero-section h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    padding-top: 15%;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .hero-section h3 {
+    text-align: center;
+  }
+  .hero-section p {
+    text-align: center;
+  }
+  .button-hero {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    text-align: center;
   }
 }
 /*------------------------------------ HERO SECTION: RIGHT --------------------------------------------*/
@@ -177,6 +207,19 @@ li a:hover {
   padding-right: 10px;
 }
 
+@media (max-width: 966px) {
+  .hero-section .hero-right img {
+    width: 370px;
+    padding-bottom: 4%;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .hero-section .hero-right img {
+    width: 220px;
+    justify-content: center;
+  }
+}
 /*------------------------------------- SECTION: CHI SONO -----------------------------------------------*/
 .about-me-section {
   text-align: center;
@@ -195,10 +238,20 @@ li a:hover {
   margin-bottom: 0;
 }
 
+@media (max-width: 650px) {
+  .about-me-section {
+    padding-top: 30%;
+  }
+  .about-me-section h2 {
+    font-size: 29px;
+  }
+  .about-me-section p {
+    font-size: 16px;
+  }
+}
 .button-cv {
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 32px;
   text-decoration: none;
   border: none;
   background-color: transparent;
@@ -243,6 +296,22 @@ li a:hover {
   margin: auto;
 }
 
+@media (max-width: 650px) {
+  .le-mie-competenze h2 {
+    font-size: 29px;
+  }
+  .le-mie-competenze p {
+    font-size: 16px;
+  }
+  .le-mie-competenze .col {
+    padding: 10px;
+  }
+}
+@media (max-width: 960px) {
+  .le-mie-competenze .col {
+    padding: 10px;
+  }
+}
 .portfolio {
   text-align: center;
   padding-bottom: 8%;
@@ -344,21 +413,33 @@ li a:hover {
   border-bottom: 1px solid #e9dfdf;
 }
 
+.Lingue {
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .contactInfo {
   padding-top: 40px;
+  color: white;
+  text-align: center;
 }
 .contactInfo ul {
-  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 0;
+  margin: auto;
 }
 .contactInfo ul li {
   position: relative;
   list-style: none;
   margin: 10px 0;
   cursor: pointer;
+  text-align: left;
 }
 .contactInfo ul li a {
   color: white;
   display: inline-block;
+  text-decoration: none;
 }
 .contactInfo ul li .icon {
   display: inline-block;
@@ -430,7 +511,7 @@ li a:hover {
     font-size: 12px;
   }
 }
-/*---------RIGHT SIDE-----------------*/
+/*----------------------------------------RIGHT SECTION OF CV-----------------------------------------------------*/
 .right-side h2 {
   color: #CE2041;
   font-weight: 700;
@@ -532,6 +613,9 @@ p {
   padding: 1%;
   width: 300px;
 }
+#modulo ul li input.button {
+  width: 100%;
+}
 #modulo ul li.testo {
   padding: 12px;
   width: 100%;
@@ -549,6 +633,7 @@ p {
   color: white;
   background-color: rgb(206, 7, 65);
   border-radius: 32px;
+  padding: 12px 24px;
   border: transparent;
   font-size: 16px;
   font-weight: 500;
@@ -564,6 +649,20 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 650px) {
+  #modulo {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  p {
+    font-size: 16px;
+  }
+  ul li .button {
+    text-align: center;
+  }
+}
 /*----------------------------------      FOOTER       -------------------------------------*/
 footer {
   text-align: center;
