@@ -129,7 +129,7 @@ ul.menu li a:hover {
   padding: 10% 5% 4%;
 }
 
-/*------------------------- HERO SECTION - LEFT ---------------------------*/
+/*---------------------------------------------------------------- HERO SECTION - LEFT -----------------------------------------------------------------*/
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -200,7 +200,7 @@ ul.menu li a:hover {
     text-align: center;
   }
 }
-/*------------------------------------ HERO SECTION: RIGHT --------------------------------------------*/
+/*------------------------------------------------------------------ HERO SECTION: RIGHT --------------------------------------------------------------*/
 .hero-section .hero-right img {
   width: 500px;
   justify-content: right;
@@ -218,9 +218,10 @@ ul.menu li a:hover {
   .hero-section .hero-right img {
     width: 220px;
     justify-content: center;
+    padding-top: 15%;
   }
 }
-/*------------------------------------- SECTION: CHI SONO -----------------------------------------------*/
+/*------------------------------------------------------ SECTION: CHI SONO -----------------------------------------------------------------------*/
 .about-me-section {
   text-align: center;
   margin: auto;
@@ -274,7 +275,7 @@ ul.menu li a:hover {
   width: 100%;
 }
 
-/* --------------------------------------------- SECTION: LE MIE COMPETENZE ----------------------------------------- */
+/* --------------------------------------------------------------- SECTION: LE MIE COMPETENZE ---------------------------------------------------------------- */
 .le-mie-competenze {
   text-align: center;
   margin: auto;
@@ -296,6 +297,11 @@ ul.menu li a:hover {
   margin: auto;
 }
 
+@media (max-width: 990px) {
+  .le-mie-competenze .col {
+    padding: 10px;
+  }
+}
 @media (max-width: 650px) {
   .le-mie-competenze h2 {
     font-size: 29px;
@@ -303,11 +309,6 @@ ul.menu li a:hover {
   .le-mie-competenze p {
     font-size: 16px;
   }
-  .le-mie-competenze .col {
-    padding: 10px;
-  }
-}
-@media (max-width: 960px) {
   .le-mie-competenze .col {
     padding: 10px;
   }
@@ -380,7 +381,7 @@ ul.menu li a:hover {
   }
 }
 
-/*------------ LEFT SECTION OF CV ---------------*/
+/*------------------------------------------------------------------------- LEFT SECTION OF CV -------------------------------------------------------------------*/
 .background-cv {
   display: flex;
   justify-content: center;
@@ -416,6 +417,7 @@ ul.menu li a:hover {
 .Lingue {
   width: -moz-max-content;
   width: max-content;
+  text-align: center;
 }
 
 .contactInfo {
@@ -507,8 +509,23 @@ ul.menu li a:hover {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
-  p {
-    font-size: 12px;
+  .box-cv .contactInfo {
+    text-align: left;
+  }
+  .box-cv .contactInfo h3 {
+    text-align: left;
+  }
+  .box-cv .contactInfo ul {
+    margin: 0;
+    font-size: 16px;
+  }
+  .box-cv .right-side .EsperienzaLavorativa ul li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 470px) {
+  .box-cv {
+    padding: 0 3px;
   }
 }
 /*----------------------------------------RIGHT SECTION OF CV-----------------------------------------------------*/

@@ -161,7 +161,7 @@ ul.menu li {
 
 
 
-/*------------------------- HERO SECTION - LEFT ---------------------------*/
+/*---------------------------------------------------------------- HERO SECTION - LEFT -----------------------------------------------------------------*/
 
 .hero-section {
     display: flex;
@@ -249,7 +249,7 @@ ul.menu li {
 }
 
 
-/*------------------------------------ HERO SECTION: RIGHT --------------------------------------------*/
+/*------------------------------------------------------------------ HERO SECTION: RIGHT --------------------------------------------------------------*/
 
 .hero-section {
 
@@ -274,11 +274,12 @@ ul.menu li {
     .hero-section .hero-right img {
         width: 220px;
         justify-content: center;
+        padding-top: 15%;
     }
 }
 
 
-/*------------------------------------- SECTION: CHI SONO -----------------------------------------------*/
+/*------------------------------------------------------ SECTION: CHI SONO -----------------------------------------------------------------------*/
 
 .about-me-section {
     text-align: center;
@@ -311,6 +312,7 @@ ul.menu li {
         p {
             font-size: 16px;
         }
+
     }
 }
 
@@ -348,7 +350,7 @@ ul.menu li {
 
 
 
-/* --------------------------------------------- SECTION: LE MIE COMPETENZE ----------------------------------------- */
+/* --------------------------------------------------------------- SECTION: LE MIE COMPETENZE ---------------------------------------------------------------- */
 
 .le-mie-competenze {
     text-align: center;
@@ -376,6 +378,14 @@ ul.menu li {
     }
 }
 
+@media (max-width: 990px) {
+    .le-mie-competenze {
+        .col {
+            padding: 10px;
+        }
+    }
+}
+
 @media (max-width: 650px) {
     .le-mie-competenze {
 
@@ -393,18 +403,12 @@ ul.menu li {
     }
 }
 
-@media (max-width: 960px) {
-    .le-mie-competenze {
-        .col {
-            padding: 10px;
-        }
-    }
-}
 
 
 
 
-// --------------------------- SEZIONE: I MIEI PROGETTI ----------------------------------
+
+// ----------------------------------------------------------------------- SEZIONE: I MIEI PROGETTI -----------------------------------------------------------------------
 
 
 .portfolio {
@@ -496,7 +500,7 @@ ul.menu li {
 
 
 
-/*------------ LEFT SECTION OF CV ---------------*/
+/*------------------------------------------------------------------------- LEFT SECTION OF CV -------------------------------------------------------------------*/
 
 .background-cv {
     display: flex;
@@ -537,6 +541,7 @@ ul.menu li {
 
 .Lingue{
     width: max-content;
+    text-align: center;
 }
 
 .contactInfo {
@@ -640,11 +645,33 @@ ul.menu li {
     .box-cv {
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
+
+        .contactInfo {
+            text-align: left;
+
+            h3 {
+                text-align: left;
+            }
+
+            ul {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+
+        .right-side .EsperienzaLavorativa {
+            ul li {
+                font-size: 16px;
+            }
+        }
         
     }
+    
+}
 
-    p {
-        font-size: 12px;
+@media (max-width: 470px) {
+    .box-cv {
+        padding: 0 3px;
     }
 }
 
